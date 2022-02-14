@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "888117271734",
+    "project_id": "react-native-cryto",
+    "storage_bucket": "react-native-cryto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888117271734:android:13f0079bb1a08da9f71a17",
+        "android_client_info": {
+          "package_name": "com.shopanimal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888117271734-irt4br2t8lkfo1l53dt12oo077175k4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYwjDo2Jh29eARtVfL9_4KF0nidIsDb_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888117271734-irt4br2t8lkfo1l53dt12oo077175k4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {Pressable, Switch} from 'react-native';
+import {Button, Pressable, Switch} from 'react-native';
 import {
   Container,
   ItemSetting,
@@ -16,6 +16,7 @@ import {KEY_STORAGE} from '../../common/KeyStorages';
 import {translation} from '../../translations';
 import {RootState} from '../redux';
 import MyNavigator from '../../utils/Mynavigation';
+import analytics from '@react-native-firebase/analytics';
 
 export default function SettingsScreen() {
   const dispatch = useDispatch();
@@ -85,6 +86,17 @@ export default function SettingsScreen() {
           value={props.theme.mode === 'light'}
         />
       </ItemSetting>
+      <Button
+        title="Add To Basket"
+        onPress={async () =>
+          await analytics().logEvent('SettingsScreen', {
+            id: 3745092,
+            item: 'mens grey t-shirt',
+            description: ['round neck', 'long sleeved'],
+            size: 'L',
+          })
+        }
+      />
     </Container>
   );
 }

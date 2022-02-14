@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {ThemeProvider} from 'styled-components/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
+import analytics from '@react-native-firebase/analytics';
 import BottomTabNavigator from './BottomTab';
 import {
   DarkTheme,
@@ -30,7 +30,8 @@ import MyNavigator from '../../utils/Mynavigation';
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 export function RootNavigator() {
-  let navigation: any;
+  let routeNameRef: string;
+
   const dispatch = useDispatch();
   const {t} = useTranslation();
   const props = useSelector((state: any) => state.themeReducer);
@@ -57,13 +58,20 @@ export function RootNavigator() {
         theme={props.theme.mode === 'dark' ? DarkTheme : DefaultTheme}
         ref={MyNavigator.rootNavigator}
         onReady={onReady}
-        onStateChange={() => {
+        onStateChange={async () => {
+          const currentRouteName = MyNavigator.getCurrentScreen();
           if (__DEV__) {
-            if (navigation) {
-              const state = navigation.getCurrentRoute().name;
-              console.log(state);
-            }
+            console.log(currentRouteName);
+            return;
           }
+
+          if (routeNameRef !== currentRouteName) {
+            await analytics().logScreenView({
+              screen_name: currentRouteName,
+              screen_class: currentRouteName,
+            });
+          }
+          routeNameRef = currentRouteName;
         }}>
         <RootStack.Navigator
           screenOptions={{animation: 'slide_from_right'}}
