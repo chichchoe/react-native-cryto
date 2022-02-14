@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "material-icon-theme.activeIconPack": "react_redux",
+  "editor.wordWrapColumn": 100,
+  "editor.fontFamily": "FiraCode-Retina",
+  "editor.fontLigatures": true,
+}

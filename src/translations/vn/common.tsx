@@ -1,0 +1,17 @@
+export default {
+  hello: 'Xin chào',
+  languageSelector: 'Ngôn ngữ',
+  theme: 'Chủ đề tối màu',
+  watchListStyle: 'Kiểu danh sách theo dõi',
+  currency: 'Loại tiền tệ',
+  volume: 'KLGG',
+  global_stats: 'Thống kê toàn cầu',
+  market_Cap: 'Vốn hoá thị trường',
+  volume_24h: 'Khối lượng thị trường 24H',
+  more: 'Xem thêm',
+  home_page: 'trang chủ',
+  blockchain_supply: 'Blockchain/nguồn cung',
+  group_chat: 'nhóm chat',
+  discussion_forum: 'diễn dàn thảo luận',
+  genesis_date: 'ngày khởi tạo',
+};

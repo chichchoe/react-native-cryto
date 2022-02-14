@@ -1,0 +1,17 @@
+export enum translation {
+  hello = 'hello',
+  languageSelector = 'languageSelector',
+  theme = 'theme',
+  watchListStyle = 'watchListStyle',
+  currency = 'currency',
+  volume = 'volume',
+  global_stats = 'Global Stats',
+  market_cap = 'Market Cap',
+  volume_24h = '24H Volume ',
+  more = 'More',
+  home_page = 'home_page',
+  blockchain_supply = 'blockchain_supply',
+  discussion_forum = 'discussion_forum',
+  genesis_date = 'genesis_date',
+  group_chat = 'group_chat',
+}

@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "name": "US Dollar",
+      "code": "USD"
+    },
+    {
+      "cc": "VND",
+      "symbol": "\u20ab",
+      "name": "Vietnamese dong"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "time": "Hours",
+    "timestamp": "1",
+    "name": "1H"
+  },
+  {
+    "time": "Hours",
+    "timestamp": "4",
+    "name": "4H"
+  },
+  {
+    "time": "Daily",
+    "timestamp": "1",
+    "name": "1D"
+  },
+  {
+    "time": "Daily",
+    "timestamp": "7",
+    "name": "7D"
+  },
+  {
+    "time": "Daily",
+    "timestamp": "14",
+    "name": "14D"
+  },
+  {
+    "time": "Daily",
+    "timestamp": "30",
+    "name": "30D"
+  },
+  {
+    "time": "Daily",
+    "timestamp": "60",
+    "name": "60D"
+  },
+  {
+    "time": "Year",
+    "timestamp": "1",
+    "name": "1Y"
+  }
+]
