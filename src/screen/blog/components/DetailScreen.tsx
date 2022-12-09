@@ -67,15 +67,18 @@ export default function DetailScreen({route, navigation}: IProps) {
         message: route.params.url || 'https://google.com',
       });
       if (result.action === Share.sharedAction) {
-        if (result.activityType) {
-          // shared with activity type of result.activityType
-        } else {
-          // shared
-        }
+        activityType(result.activityType);
       } else if (result.action === Share.dismissedAction) {
         // dismissed
       }
     } catch (error) {}
+  };
+  const activityType = (result: String | undefined) => {
+    if (result) {
+      // shared with activity type of result.activityType
+    } else {
+      // shared
+    }
   };
   return (
     <SafeAreaView style={{flex: 1}}>
