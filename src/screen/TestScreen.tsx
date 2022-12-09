@@ -55,7 +55,7 @@ export default function TestScreen() {
     if (isRefreshing) {
       setExtraPaddingTop(refreshingHeight);
       // 3. Trigger play when is refreshing
-      lottieViewRef.current.play();
+      // lottieViewRef.current.play();
     } else {
       setExtraPaddingTop(0);
     }
