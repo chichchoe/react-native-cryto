@@ -73,7 +73,7 @@ export default function DetailScreen({route, navigation}: IProps) {
       }
     } catch (error) {}
   };
-  const activityType = (result: String | undefined) => {
+  const activityType = (result: string | undefined) => {
     if (result) {
       // shared with activity type of result.activityType
     } else {

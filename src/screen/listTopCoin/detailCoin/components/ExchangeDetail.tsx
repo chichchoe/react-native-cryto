@@ -6,7 +6,6 @@ import {
   Pressable,
   // ActivityIndicator,
 } from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
 import {COLOR} from '../../../../common/Color';
 import {Text} from '../../../../components';
 // import {RootStackParamList} from '../../../../interface';
