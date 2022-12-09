@@ -114,6 +114,7 @@ export default function TestScreen() {
           />
         }
       />
+      <Text>hello</Text>
     </View>
   );
 }
